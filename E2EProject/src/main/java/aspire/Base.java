@@ -1,4 +1,4 @@
-package Aspire;
+package aspire;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -12,13 +12,14 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.concurrent.TimeUnit;
 
-public class base {
+public class Base {
     public WebDriver driver;
     Utility util = new Utility();
 
     public WebDriver initializeDriver() throws IOException, URISyntaxException {
         System.setProperty("webdriver.chrome.driver", util.getPath("chromedriver.exe"));
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
     }

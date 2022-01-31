@@ -1,4 +1,4 @@
-package Aspire;
+package aspire;
 
 /**
  * Hello world!

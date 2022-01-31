@@ -1,4 +1,4 @@
-package Aspire;
+package aspire;
 
 import junit.framework.TestCase;
 import junit.framework.TestSuite;

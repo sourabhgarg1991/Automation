@@ -1,0 +1,2 @@
+Step 1: Build the project using : mvn clean install
+Step 2: Run testng.xml
